@@ -3,6 +3,7 @@
 # Overview
 This is a simple example of how to use the Ollama RAG (retrieval augmented generation). The application is fully dockerized and can be run with a single command.
 It's a nodejs version of the [Ollama RAG example](https://ollama.com/blog/embedding-models) provided by Ollama.
+The project uses the [chroma](https://chroma.ollama.com/) API to interact with the Ollama models.
 
 # Running the application
 To run the application, you need to have docker installed on your machine. If you don't have docker installed, you can download it from [here](https://docs.docker.com/get-docker/).
