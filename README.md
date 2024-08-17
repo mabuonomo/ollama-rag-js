@@ -1,4 +1,4 @@
-# Ollama RAG JS/TS (fully dockerized)
+# Ollama RAG (retrieval augmented generation) TS (fully dockerized)
 
 ## 🔥 Overview
 
