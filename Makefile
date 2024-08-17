@@ -7,9 +7,6 @@ __start:
 sh: __start
 	${DOCKER_EXEC} zsh
 
-lint: __start
-	${DOCKER_EXEC} npm run lint:fix
-
 setup: __start
 	${DOCKER_EXEC} npm install
 
