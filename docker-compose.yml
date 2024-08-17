@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+    rag_dev:
+        container_name: rag_dev
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        tty: true
+        env_file:
+            - .env
+        volumes:
+            - ./:/app
+        networks:
+            - rag_default
+
+    rag_ollama:
+        container_name: rag_ollama
+        image: ollama/ollama
+        volumes:
+            - .data/.ollama:/root/.ollama
+        networks:
+            - rag_default
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: 1
+                          capabilities: [gpu]
+
+    rag_chromadb:
+        container_name: rag_chromadb
+        image: chromadb/chroma
+        volumes:
+            - .data/.chroma:/chroma/chroma
+        environment:
+            IS_PERSISTENT: "true" 
+            ANONYMIZED_TELEMETRY: "true" 
+        networks:
+            - rag_default
+
+networks:
+    rag_default:
+        name: rag_default
