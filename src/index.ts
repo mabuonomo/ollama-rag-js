@@ -11,6 +11,6 @@ async function startRAGBot(prompt: string) {
 const MAIN_PROMPT = 'What animals are llamas related to?';
 
 startRAGBot(MAIN_PROMPT).then((response) => {
-    console.log(MAIN_PROMPT);
-    console.log(response);
+    console.log('Prompt', MAIN_PROMPT);
+    console.log('Response', response);
 });
