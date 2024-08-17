@@ -10,7 +10,7 @@ To run the application, you need to have docker installed on your machine. If yo
 After you have docker installed, you can run the following command to start the application:
 ```bash
 make ollama_pull # Pull the models
-make ollama_run # execute the application
+make run # execute the application
 ```
 
 Output:
