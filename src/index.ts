@@ -10,6 +10,6 @@ async function startRAGBot(prompt: string) {
 }
 
 startRAGBot(MAIN_PROMPT).then((response) => {
-    console.log('Prompt', MAIN_PROMPT);
-    console.log('Response', response);
+    console.log('Prompt:', MAIN_PROMPT);
+    console.log('Response:', response);
 });
