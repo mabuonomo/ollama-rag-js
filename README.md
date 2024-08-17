@@ -53,5 +53,5 @@ Response: {
 
 * <https://ollama.com/blog/embedding-models>
 * <https://docs.trychroma.com/integrations/ollama>
-* <https://cookbook.chromadb.dev/integrations/ollama/embeddings/#golang>
+* <https://cookbook.chromadb.dev/integrations/ollama/embeddings/#javascript>
 * <https://cookbook.chromadb.dev/integrations/ollama/> (coming soon at the time of writing)
