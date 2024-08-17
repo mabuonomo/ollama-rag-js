@@ -1,16 +1,25 @@
-## Ollama RAG JS/TS (fully dockerized)
+# Ollama RAG JS/TS (fully dockerized)
 
-# Overview
+## 🔥 Overview
+
 This is a simple example of how to use the Ollama RAG (retrieval augmented generation). The application is fully dockerized and can be run with a single command.
 It's a nodejs version of the [Ollama RAG example](https://ollama.com/blog/embedding-models) provided by Ollama.
 The project uses the [chromadb](https://docs.trychroma.com/) API to interact with the Ollama models, "Chroma is the AI-native open-source vector database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs".
 
-# Running the application
+## 🔨 Running the application
+
 To run the application, you need to have docker installed on your machine. If you don't have docker installed, you can download it from [here](https://docs.docker.com/get-docker/).
 
-After you have docker installed, you can run the following command to start the application:
+After you have docker installed, you can run the following command to install the required packages and models:
+
 ```bash
+make setup # Setup the application
 make ollama_pull # Pull the models
+```
+
+After the models are pulled and packages are installated, you can run the application with the following command:
+
+```bash
 make run # execute the application
 ```
 
@@ -41,8 +50,9 @@ Response: {
 }
 ```
 
-# References
-* https://ollama.com/blog/embedding-models
-* https://docs.trychroma.com/integrations/ollama
-* https://cookbook.chromadb.dev/integrations/ollama/embeddings/#golang
-* https://cookbook.chromadb.dev/integrations/ollama/ (coming soon at the time of writing)
+## 🔭 References
+
+* <https://ollama.com/blog/embedding-models>
+* <https://docs.trychroma.com/integrations/ollama>
+* <https://cookbook.chromadb.dev/integrations/ollama/embeddings/#golang>
+* <https://cookbook.chromadb.dev/integrations/ollama/> (coming soon at the time of writing)
