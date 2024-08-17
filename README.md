@@ -2,9 +2,8 @@
 
 ## 🔥 Overview
 
-This is a simple example of how to use the Ollama RAG (retrieval augmented generation). The application is fully dockerized and can be run with a single command.
+This is a simple example of how to use the Ollama RAG (retrieval augmented generation) using Ollama embeddings with nodejs, typescript, docker and [chromadb](https://docs.trychroma.com/).
 It's a nodejs version of the [Ollama RAG example](https://ollama.com/blog/embedding-models) provided by Ollama.
-The project uses the [chromadb](https://docs.trychroma.com/) API to interact with the Ollama models, "Chroma is the AI-native open-source vector database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs".
 
 ## 🔨 Running the application
 
