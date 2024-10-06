@@ -27,26 +27,23 @@ Output:
 ```bash
 Prompt: What animals are llamas related to?
 Response: {
-  model: 'llama3.1',
-  created_at: '2024-08-17T15:32:02.714335253Z',
+  model: 'llama3.2',
+  created_at: '2024-10-06T13:30:47.825643583Z',
   message: {
     role: 'assistant',
-    content: 'According to the given information, llamas are related to:\n' +
+    content: 'Based on the information provided, it is stated that llamas are part of the camelid family. This means they share a close genetic relationship with other animals within this family. Specifically, llamas are closely related to:\n' +
       '\n' +
       '1. Vicuñas\n' +
-      '2. Camels\n' +
-      '\n' +
-      'This is because they all belong to the camelid family!'
+      '2. Camels (although not as closely related to domesticated camels)'
   },
   done_reason: 'stop',
   done: true,
-  total_duration: 14586886161,
-  load_duration: 2862500495,
-  prompt_eval_count: 52,
-  prompt_eval_duration: 1728781000,
-  eval_count: 36,
-  eval_duration: 9994385000
-}
+  total_duration: 7936475467,
+  load_duration: 36586649,
+  prompt_eval_count: 66,
+  prompt_eval_duration: 136286000,
+  eval_count: 67,
+  eval_duration: 7720279000
 ```
 
 ## 🔭 References

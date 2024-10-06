@@ -11,7 +11,7 @@ setup: __start
 	${DOCKER_EXEC} npm install
 
 ollama_pull: __start
-	docker exec -it rag_ollama ollama pull llama3.1
+	docker exec -it rag_ollama ollama pull llama3.2
 	docker exec -it rag_ollama ollama pull mxbai-embed-large
 
 run: __start

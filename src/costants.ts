@@ -9,7 +9,7 @@ export const MODEL_DOCUMENTS = [
     'Llamas live to be about 20 years old, though some only live for 15 years and others live to be 30 years old',
 ];
 
-export const OLLAMA_MODEL_EMBEDDING = 'mxbai-embed-large'; // 'nomic-embed-text';
-export const OLLAMA_MODEL = 'llama3.1';
+export const OLLAMA_MODEL_EMBEDDING = process.env.OLLAMA_EMB_MODEL;
+export const OLLAMA_MODEL = process.env.OLLAMA_MODEL; 
 export const NAME_EMBEDDING_COLLECTION = `ollama-embeddings-${uuidv4()}`;
 export const MAIN_PROMPT = 'What animals are llamas related to?';
